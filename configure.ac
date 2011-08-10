@@ -64,6 +64,13 @@ AM_GNU_GETTEXT
 AM_GNU_GETTEXT_VERSION([0.16])
 AX_DESKTOP_I18N
 
+# check for gtk-doc
+m4_ifdef([GTK_DOC_CHECK], [
+GTK_DOC_CHECK([1.14],[--flavour no-tmpl])
+],[
+AM_CONDITIONAL([ENABLE_GTK_DOC], false)
+])
+
 #####################################################################
 # Check for libraries that use pkg-config
 #####################################################################
@@ -167,12 +174,23 @@ AX_PCB_DIRS
 # Set up libgeda with the correct ld version number
 AX_LIBGEDA([41:0:0])
 
+# Set up libeda with the correct ld version number
+AX_LIBEDA([10:0:0])
+
 #####################################################################
 # Generate output
 #####################################################################
 
 AC_CONFIG_FILES([Makefile
                  intl/Makefile
+
+                 libeda/Makefile
+                 libeda/libeda.pc
+                 libeda/docs/Makefile
+                 libeda/docs/reference/Makefile
+                 libeda/include/Makefile
+                 libeda/src/Makefile
+                 libeda/tests/Makefile
 
                  libgeda/Makefile
                  libgeda/libgeda.pc

@@ -207,6 +207,7 @@ fi
 #####################################################################
 
 ( cd $srcdir &&
+  gtkdocize &&
   autopoint_fix &&
   run_tool "$DESKTOP_I18N" --setup &&
   run_tool "$LIBTOOLIZE" --force --copy &&
