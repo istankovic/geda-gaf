@@ -8,6 +8,7 @@ libeda_la_SOURCES = \
 		edaobject.c \
 		edamarshallers.c \
 		edanet.c \
+		edapin.c \
 		edapage.c \
 		edatypes.c \
 		util.c

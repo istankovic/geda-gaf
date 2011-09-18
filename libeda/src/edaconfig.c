@@ -23,6 +23,8 @@ make_default_config()
     cfg->keyfile = keyfile = g_key_file_new();
 
     eda_config_set_int(cfg, "graphical", "net-width", 10);
+    eda_config_set_int(cfg, "graphical", "pin-width-net", 10);
+    eda_config_set_int(cfg, "graphical", "pin-width-bus", 30);
     return cfg;
 }
 

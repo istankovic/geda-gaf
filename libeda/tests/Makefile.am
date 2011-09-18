@@ -3,7 +3,7 @@ AM_CFLAGS = $(GLIB_CFLAGS)
 
 LDADD = ../src/libeda.la signaltracker.o
 
-TEST_PROGS = test-page test-net
+TEST_PROGS = test-page test-net test-pin
 
 noinst_PROGRAMS = ${TEST_PROGS}
 

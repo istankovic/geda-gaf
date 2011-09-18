@@ -74,11 +74,40 @@ EdaPagePrivate
 </SECTION>
 
 <SECTION>
+<FILE>edapin</FILE>
+<TITLE>EdaPin</TITLE>
+EdaPin
+eda_pin_new
+eda_pin_get_color
+eda_pin_set_color
+eda_pin_get_coords
+eda_pin_set_coords
+eda_pin_get_position
+<SUBSECTION Standard>
+EDA_PIN
+EDA_IS_PIN
+EDA_TYPE_PIN
+eda_pin_get_type
+EDA_PIN_CLASS
+EDA_IS_PIN_CLASS
+EDA_PIN_GET_CLASS
+<SUBSECTION Private>
+EdaPinClass
+EdaPinPrivate
+</SECTION>
+
+<SECTION>
 <FILE>edaerrors</FILE>
 <TITLE>Error handling</TITLE>
 EDA_ERROR
 EdaError
 eda_error_quark
+</SECTION>
+
+<SECTION>
+<FILE>edaenums</FILE>
+<TITLE>Standard enumerations</TITLE>
+EdaPinKind
 </SECTION>
 
 <SECTION>

@@ -15,9 +15,11 @@
      <xi:include href="xml/edapage.xml"/>
      <xi:include href="xml/edaobject.xml"/>
      <xi:include href="xml/edanet.xml"/>
+     <xi:include href="xml/edapin.xml"/>
   </chapter>
 
   <xi:include href="xml/edaerrors.xml"/>
+  <xi:include href="xml/edaenums.xml"/>
 
   <index id="api-index-full">
     <title>API Index</title>

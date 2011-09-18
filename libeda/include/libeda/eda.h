@@ -24,6 +24,7 @@
 #include <libeda/edapage.h>
 #include <libeda/edaobject.h>
 #include <libeda/edanet.h>
+#include <libeda/edapin.h>
 #include <libeda/edatypes.h>
 
 #endif
